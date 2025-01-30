@@ -1,0 +1,712 @@
+<!--X3D Project-->
+<!--DMIS 2B-->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://www.x3dom.org/release/x3dom.js"></script>
+<link rel="stylesheet" href="http://www.x3dom.org/release/x3dom.css"></link>
+<title>X3D Model: My Shared Kitchen</title>
+</head>
+<body>
+<h1>My Shared Kitchen</h1>
+<x3d width="1000px" height="1000px">
+<scene DEF="scene">
+
+<!-- Viewpoints -->
+<Viewpoint id='Entry' position='0.24014 2.51891 18.97867' orientation='-0.99549 0.09486 -0.00060 0.13254' description='camera'></Viewpoint>
+<Viewpoint id='Aerial View' position='-16.38005 8.50169 12.62326' orientation='-0.34699 -0.91393 -0.21056 0.99471' description='camera'></Viewpoint>
+
+ <!-- Background and Light -->
+<background skyColor='0 0 0'></background>
+<directionalLight id="directional" direction='0 0 -1' on ="TRUE" intensity='.2' shadowIntensity='0.2'> </directionalLight>
+
+<!--Kitchen Floor-->
+<shape>
+	<appearance>
+		<ImageTexture  url="https://upload.wikimedia.org/wikipedia/commons/1/17/Pine_Wood_-_lumber%2C_table%2C_floor%2C_desk_2.jpg"><ImageTexture/>
+	</appearance>
+<box DEF='kitchenfloor' size='8 -0.01 12' solid='true'/>
+</shape>
+
+<!--Window Wall-->
+
+<transform rotation='0 0 0 0' translation='0 2.5 -6' solid='true'>
+
+<shape>
+	<appearance>
+		<material diffuseColor ='wheat'>
+		</material>
+	</appearance>
+<box DEF='window_wall' size='8 5 0.2'/>
+</shape>
+</transform>
+</group>
+
+<!--Window-->
+
+<transform rotation= '0 0 0' translation='0 2.8 -5.9' />
+<shape>
+<appearance>
+		<ImageTexture  url="https://upload.wikimedia.org/wikipedia/commons/b/be/View_of_a_frosty_evening_through_a_window_on_a_Scottish_farm.jpg"><ImageTexture/>
+	</appearance>
+<box DEF='window' size='2.6 1.8 0.01' solid='true' />
+</shape>
+</transform>
+</group>
+
+<!--Right Wall-->
+
+<transform rotation='0 0 0 0' translation='4 2.5 0' solid='true'>
+
+<shape>
+	<appearance>
+		<material diffuseColor ='wheat'>
+		</material>
+	</appearance>
+<box DEF='window_wall' size='0.1 5 12'/>
+</shape>
+</transform>
+</group>
+
+<!--Left Bottom Cabinets-->
+
+<transform rotation='0 0 0 0' translation='-3 0.76 -1' solid='true'>
+
+<shape>
+<appearance>
+<material diffuseColor ='wheat'>
+</material>
+</appearance>
+<box DEF='LB Cabinet' size='2 1.5 10' />
+</shape>
+</transform>
+</group>
+
+<!--Right Bottom Cabinets-->
+
+<transform rotation='0 0 0 0' translation='3 0.76 -2' solid='true'>
+
+<shape>
+<appearance>
+<material diffuseColor ='wheat'>
+</material>
+</appearance>
+<box DEF='RB Cabinet' size='2 1.5 8' />
+</shape>
+</transform>
+</group>
+
+<!--Fridge-->
+
+<transform rotation= '0 0 0 0' translation ='3.25 1.76 3' />
+<shape>
+<appearance>
+<material diffuseColor ='0.7529 0.7529 0.7529 '>
+</material>
+</appearance>
+<box DEF='fridge' size='1.5 3.5 2' solid= 'true' />
+</shape>
+</transform>
+</group>
+
+<!--Fridge handles-->
+
+<transform rotation='0 0 0 0' translation='2.5 1.8 2.9'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<box DEF='fridge handle 1' size='0.02 2 0.06' solid='true'>
+</shape>
+</transform>
+</group>
+
+<transform rotation='0 0 0 0' translation='2.5 1.8 3.2'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<box DEF='fridge handle 2' size='0.02 2 0.06' solid='true'>
+</shape>
+</transform>
+</group>
+
+<!--Boiler Cabinet-->
+
+<transform rotation='0 0 0 0' translation='3.25 3 -4.9' solid='true'>
+
+<shape>
+<appearance>
+<material diffuseColor ='0.6 0.5 0.7'>
+</material>
+</appearance>
+<box DEF='boiler cabinet' size='1.5 3 2' />
+</shape>
+</transform>
+</group>
+
+<!--Cup Cabinet Left-->
+
+<transform rotation='0 0 0 0' translation='3.35 3.5 -2.9' solid='true'>
+
+<shape>
+<appearance>
+<material diffuseColor ='0.4 0.4 0.6'>
+</material>
+</appearance>
+<box DEF='Cup Cabinet L' size='1.3 2 2' />
+</shape>
+</transform>
+</group>
+
+<!--Stove Extractor Cabinet-->
+
+<transform rotation='0 0 0 0' translation='3.35 3.85 -0.9' solid='true'>
+
+<shape>
+<appearance>
+<material diffuseColor ='0.6 0.5 0.7'>
+</material>
+</appearance>
+<box DEF='Stove Extractor' size='1.3 1.3 2' />
+</shape>
+</transform>
+</group>
+
+<!--Cup Cabinet Right-->
+
+<transform rotation='0 0 0 0' translation='3.35 3.5 1.05' solid='true'>
+
+<shape>
+<appearance>
+<material diffuseColor ='0.4 0.4 0.6'>
+</material>
+</appearance>
+<box DEF='Cup Cabinet R' size='1.3 2 1.9' />
+</shape>
+</transform>
+</group>
+
+<!--Pantry-->
+
+<transform rotation= '0 0 0 0' translation ='3.25 2.26 5' />
+<shape>
+<appearance>
+<material diffuseColor ='0.9804 0.9216 0.8431'>
+</material>
+</appearance>
+<box DEF='pantry' size='1.5 4.5 2' solid= 'true' />
+</shape>
+</transform>
+</group>
+
+<!--Pantry Handle-->
+<transform rotation='0 0 0 0' translation='2.5 2.2 4.5'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<box DEF='pantry handle' size='0.02 0.75 0.06' solid='true'>
+</shape>
+</transform>
+</group>
+
+
+<!--Backsplash-->
+
+<transform rotation= '0 0 0' translation='3.9 2 -1' />
+<shape>
+<appearance>
+		<ImageTexture  url="https://upload.wikimedia.org/wikipedia/commons/c/c6/Grey_blue_slate_slightly_chipped_brick_tiled_rectangle_floor_paving_texture.jpg"><ImageTexture/>
+	</appearance>
+<box DEF='backsplash' size='0.01 3 6' solid='true' />
+</shape>
+</transform>
+</group>
+
+<!--microwave-->
+
+<transform rotation= '0 0 0 0' translation= '3.35 1.875 -3.1'>
+<shape>
+<appearance>
+<material diffuseColor ='1 0 0'>
+</material>
+</appearance>
+<box DEF='microwave' size='0.5 0.75 1.25' solid='true'/>
+</shape>
+</transform>
+</group>
+
+<!--microwave window-->
+
+<transform rotation= '0 0 0 0' translation ='3.1 1.875 -3.2'>
+<shape>
+<appearance>
+<material diffuseColor= '0.851 0.851 0.851'>
+</material>
+</appearance>
+<box DEF= 'microwave_window' size='0.01 0.4 0.75' solid='true'/>
+</shape>
+</transform>
+</group>
+
+<!--Hob-->
+
+<transform rotation= '0 0 0' translation='3.1 1.52 -0.85' />
+<shape>
+<appearance>
+<material diffuseColor ='0 0 0'>
+</material>
+</appearance>
+<box DEF='hob' size='1.5 0.01 1.5' solid='true' />
+</shape>
+</transform>
+</group>
+
+<!--Hob Burners-->
+
+<transform rotation='0 0 0 0' translation='2.8 1.53 -1.2'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<cylinder DEF='Hob_Burner1' radius='0.2' height='0.02' top='true' side='true' solid='true'>
+</shape>
+</transform>
+</group>
+
+<transform rotation='0 0 0 0' translation='3.4 1.53 -1.2'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<cylinder DEF='Hob_Burner2' radius='0.2' height='0.02' top='true' side='true' solid='true'>
+</shape>
+</transform>
+</group>
+
+<transform rotation='0 0 0 0' translation='2.8 1.53 -0.6'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<cylinder DEF='Hob_Burner3' radius='0.2' height='0.02' top='true' side='true' solid='true'>
+</shape>
+</transform>
+</group>
+
+<transform rotation='0 0 0 0' translation='3.4 1.53 -0.6'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<cylinder DEF='Hob_Burner4' radius='0.2' height='0.02' top='true' side='true' solid='true'>
+</shape>
+</transform>
+</group>
+
+<!--Oven-->
+
+<transform rotation= '0 0 0' translation='2 0.6 -0.85' />
+<shape>
+<appearance>
+<material diffuseColor ='0 0 0'>
+</material>
+</appearance>
+<box DEF='Oven' size='0.02 1 1.5' solid='true' />
+</shape>
+</transform>
+</group>
+
+<transform rotation= '0 0 0' translation='2.001 1.2 -0.85' />
+<shape>
+<appearance>
+<material diffuseColor ='0.7 0.7 0.7'>
+</material>
+</appearance>
+<box DEF='oven' size='0.01 0.2 1.5' solid='true' />
+</shape>
+</transform>
+</group>
+
+<transform rotation= '0 0 0' translation='2.01 0.6 -0.85' />
+<shape>
+<appearance>
+		<ImageTexture  url="https://upload.wikimedia.org/wikipedia/commons/c/c6/Grilled_chicken_in_electric_oven%2C_Rostov-on-Don%2C_Russia.jpg"><ImageTexture/>
+	</appearance>
+<box DEF='oven' size='0.05 0.8 1.3' solid='true' />
+</shape>
+</transform>
+</group>
+
+<!--Oven Handle-->
+
+<transform rotation='0 0 0 0' translation='1.99 1 -0.85'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<box DEF='oven handle' size='0.02 0.06 0.75' solid='true'>
+</shape>
+</transform>
+</group>
+
+<!--cabinet handles Bottom Right-->
+
+<transform rotation='0 0 0 0' translation='2 0.75 -2.2'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<box DEF='cabinet_handle_BR1' size='0.02 0.75 0.06' solid='true'>
+</shape>
+</transform>
+</group>
+
+<transform rotation='0 0 0 0' translation='2 0.75 -4'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<box DEF='cabinet_handle_BR2' size='0.02 0.75 0.06' solid='true'>
+</shape>
+</transform>
+</group>
+
+<transform rotation='0 0 0 0' translation='2 0.75 0.4'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<box DEF='cabinet_handle_BR3' size='0.02 0.75 0.06' solid='true'>
+</shape>
+</transform>
+</group>
+
+<!--cabinet handles Bottom Left-->
+
+<transform rotation='0 0 0 0' translation='-2 0.75 -2.2'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<box DEF='cabinet_handle_BL1' size='0.02 0.75 0.06' solid='true'>
+</shape>
+</transform>
+</group>
+
+<transform rotation='0 0 0 0' translation='-2 0.75 -4'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<box DEF='cabinet_handle_BL2' size='0.02 0.75 0.06' solid='true'>
+</shape>
+</transform>
+</group>
+
+<transform rotation='0 0 0 0' translation='-2 0.75 -0.4'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<box DEF='cabinet_handle_BL3' size='0.02 0.75 0.06' solid='true'>
+</shape>
+</transform>
+</group>
+
+<transform rotation='0 0 0 0' translation='-2 0.75 2.3'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<box DEF='cabinet_handle_BL4' size='0.02 0.75 0.06' solid='true'>
+</shape>
+</transform>
+</group>
+
+<!--Utensil Drawers-->
+<transform rotation='0 0 0 0' translation='-2 1 3.2'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<box DEF='Utensil_drawer1' size='0.02 0.04 1' solid='true'>
+</shape>
+</transform>
+</group>
+
+<transform rotation='0 0 0 0' translation='-2 0.75 3.2'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<box DEF='Utensil_drawer2' size='0.02 0.04 1' solid='true'>
+</shape>
+</transform>
+</group>
+
+<transform rotation='0 0 0 0' translation='-2 0.5 3.2'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<box DEF='Utensil_drawer3' size='0.02 0.04 1' solid='true'>
+</shape>
+</transform>
+</group>
+
+<!--cabinet handles Top-->
+
+<transform rotation='0 0 0 0' translation='2.7 3 -2.1'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<box DEF='cabinet_handle_T1' size='0.02 0.75 0.06' solid='true'>
+</shape>
+</transform>
+</group>
+
+<transform rotation='0 0 0 0' translation='2.7 3 0.33'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<box DEF='cabinet_handle_T2' size='0.02 0.75 0.06' solid='true'>
+</shape>
+</transform>
+</group>
+
+<transform rotation='0 0 0 0' translation='2.5 2.2 -4.1'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<box DEF='cabinet_handle_T3' size='0.02 0.75 0.06' solid='true'>
+</shape>
+</transform>
+</group>
+
+<transform rotation='0 0 0 0' translation='2.7 3.32 -0.9'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<box DEF='cabinet_handle_T4' size='0.02 0.06 0.75' solid='true'>
+</shape>
+</transform>
+</group>
+
+<!--Washing Machine-->
+
+<transform rotation= '0 0 0' translation='-2 0.7 0.5' />
+<shape>
+<appearance>
+<material diffuseColor ='0.4 0.4 0.4'>
+</material>
+</appearance>
+<box DEF='washing_machine' size='0.02 1.3 1.3' solid='true' />
+</shape>
+</transform>
+</group>
+
+<transform rotation= '0 0 0' translation='-2 0.7 0.5' />
+<shape>
+<appearance>
+		<ImageTexture  url="https://upload.wikimedia.org/wikipedia/commons/e/ec/LG_%EB%93%9C%EB%9F%BC%EC%84%B8%ED%83%81%EA%B8%B0%EC%99%80_%EC%8B%9D%EA%B8%B0%EC%84%B8%EC%B2%99%EA%B8%B0%2C_%EC%98%81%EA%B5%AD%EC%84%9C_%EB%AC%BC%EC%82%AC%EC%9A%A9_%ED%9A%A8%EC%9C%A8_%EC%B5%9C%EC%9A%B0%EC%88%98_%EC%A0%9C%ED%92%88_%EC%88%98%EC%83%81.jpg"><ImageTexture/>
+	</appearance>
+<box DEF='washing_machine' size='0.05 1.3 1.3' solid='true' />
+</shape>
+</transform>
+</group>
+
+<!--Sink-->
+
+<transform rotation= '0 0 0' translation='-3 1.52 -1.3' />
+<shape>
+<appearance>
+<material diffuseColor ='0.7 0.7 0.7'>
+</material>
+</appearance>
+<box DEF='sink' size='1.8 0.01 2' solid='true' />
+</shape>
+</transform>
+</group>
+
+<transform rotation= '90 0 0' translation='-3 1.53 -1.3' />
+<shape>
+<appearance>
+<ImageTexture  url="https://upload.wikimedia.org/wikipedia/commons/f/f8/Stainless_steel_sink_strainer_2017_-_D.jpg"><ImageTexture/>
+</appearance>
+<box DEF='sink' size='1.6 0.01 1.8' solid='true' />
+</shape>
+</transform>
+</group>
+
+<!--Plant pot--> <!--Cylinder-->
+
+<transform rotation='0 0 0 0' translation='-3.7 1.65 -5.5'>
+<shape>
+<appearance>
+<material diffuseColor='0.5 0.5 0.5'>
+</material>
+</appearance>
+<cylinder DEF='pot' radius='0.2' height='0.3' top='false' bottom='true' side='true' solid='false'>
+</shape>
+</transform>
+</group>
+
+<!--Plant--> <!--Sphere-->
+
+<transform rotation='0 0 0 0' translation='-3.7 1.78 -5.5'>
+<shape>
+<appearance>
+<imageTexture url='https://upload.wikimedia.org/wikipedia/commons/f/fc/Flower_252.jpg'/>
+</appearance>
+<sphere DEF='plant' radius='0.19' solid='true'>
+</shape>
+</transform>
+</group>
+
+<!--Bins--> <!--Cylinder-->
+
+<transform rotation='0 0 0 0' translation='-0.7 0.61 -5.5'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<cylinder DEF='Bin1' radius='0.4' height='1.2' top='true' side='true' solid='true'>
+</shape>
+</transform>
+</group>
+
+<transform rotation='0 0 0 0' translation='0.5 0.61 -5.5'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<cylinder DEF='Bin2' radius='0.4' height='1.2' top='true' side='true' solid='true'>
+</shape>
+</transform>
+</group>
+
+<!--Bins--> <!--Sphere-->
+
+<transform rotation='0 0 0 0' translation='-0.7 1.2 -5.5'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<sphere DEF='bins' radius='0.4' solid='true'>
+</shape>
+</transform>
+</group>
+
+<transform rotation='0 0 0 0' translation='0.5 1.2 -5.5'>
+<shape>
+<appearance>
+<material diffuseColor='0.7 0.7 0.7'>
+</material>
+</appearance>
+<sphere DEF='bins' radius='0.4' solid='true'>
+</shape>
+</transform>
+</group>
+
+<!--Sauce Bottles--> <!--cylinder & cone-->
+
+<transform rotation='0 0 0 0' translation='-3.8 1.8 1.5'>
+<shape> 
+	<appearance> 
+		<ImageTexture url="https://upload.wikimedia.org/wikipedia/commons/b/bf/Ketchup_Deppenleerzeichen.jpg"><ImageTexture/> 
+	</appearance> 
+<cylinder DEF='bottle' radius='0.08' height='0.7' solid='true'/> 
+</shape> 
+</transform>
+    
+<transform rotation='0 0 0 0' translation='-3.8 2.22 1.5'>
+<shape> 
+<appearance> 
+<material diffuseColor='1 0 0'></material>  
+</appearance> 
+<cone DEF='nozzle' bottomradius='0.06' height='0.15' topradius='0' solid='true'/> 
+</shape>
+</transform>
+</group>
+
+<transform rotation='0 0 0 0' translation='-3.8 1.8 1.75'>
+<shape> 
+	<appearance> 
+		<ImageTexture url="https://upload.wikimedia.org/wikipedia/commons/b/bf/Ketchup_Deppenleerzeichen.jpg"><ImageTexture/> 
+	</appearance> 
+<cylinder DEF='bottle' radius='0.08' height='0.7' solid='true'/> 
+</shape> 
+</transform>
+    
+<transform rotation='0 0 0 0' translation='-3.8 2.22 1.75'>
+<shape> 
+<appearance> 
+<material diffuseColor='1 0 0'></material>  
+</appearance> 
+<cone DEF='nozzle' bottomradius='0.06' height='0.15' topradius='0' solid='true'/> 
+</shape>
+</transform>
+</group>
+
+<transform rotation='0 0 0 0' translation='-3.8 1.8 2'>
+<shape> 
+	<appearance> 
+		<ImageTexture url="https://upload.wikimedia.org/wikipedia/commons/b/bf/Ketchup_Deppenleerzeichen.jpg"><ImageTexture/> 
+	</appearance> 
+<cylinder DEF='bottle' radius='0.08' height='0.7' solid='true'/> 
+</shape> 
+</transform>
+    
+<transform rotation='0 0 0 0' translation='-3.8 2.22 2'>
+<shape> 
+<appearance> 
+<material diffuseColor='1 0 0'></material>  
+</appearance> 
+<cone DEF='nozzle' bottomradius='0.06' height='0.15' topradius='0' solid='true'/> 
+</shape>
+</transform>
+</group>
+
+
+</Group>				
+</scene>
+</x3d>
+
+ <h2> Viewpoints</h2>
+
+<button onclick="document.getElementById('Entry').setAttribute('set_bind','true');">Entry</button>
+<button onclick="document.getElementById('Aerial View').setAttribute('set_bind','true');">Aerial View</button>
+
+</body>
+</html>
