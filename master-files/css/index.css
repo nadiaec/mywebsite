@@ -1,4 +1,3 @@
-/* Global Reset */
 * {
   margin: 0;
   padding: 0;
@@ -69,6 +68,7 @@ body {
   transform: scale(1.05);
 }
 
+/* Video Grid */
 .video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -86,6 +86,7 @@ video {
   border-radius: 8px;
 }
 
+/* X3D Container */
 .x3d-container {
   background: white;
   padding: 20px;
@@ -106,14 +107,23 @@ video {
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* iFrame Styling */
 iframe {
   width: 100%;
   height: 600px;
   border: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Headings */
+h1 {
+  text-align: center;
+  padding: 20px;
+}
 
-/* Page content */
+/* Page Content */
 .content {
   padding: 16px;
 }
@@ -139,3 +149,36 @@ iframe {
   max-width: 100%; /* Prevents the image from becoming larger than its original size */
   display: block; /* Removes extra spacing below the image */
 }
+
+/* Updated Container for Paragraphs */
+.container {
+  background-color: #fff;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  color: #000; /* Ensure readability inside white background */
+}
+
+/* Website Links Section */
+.website-links {
+  margin-top: 30px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+    border-left: 3px solid #007BFF;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+
