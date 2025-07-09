@@ -118,6 +118,13 @@ iframe {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.tiktok-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+
 /* Headings */
 h1 {
   text-align: center;
