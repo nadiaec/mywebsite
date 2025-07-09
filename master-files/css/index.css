@@ -87,6 +87,13 @@ video {
   border-radius: 8px;
 }
 
+.video-item blockquote.tiktok-embed {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+
+
 /* X3D Container */
 .x3d-container {
   background: white;
